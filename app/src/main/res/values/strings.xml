@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">BottomNavigationExample</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="profile_name">RIZKI RHOMA DHANI PRAJUNA</string>
+    <string name="label_nama">Nama Lengkap</string>
+    <string name="label_nim">NIM</string>
+    <string name="label_ttl">Tanggal Lahir</string>
+    <string name="label_jurusan">Jurusan</string>
+    <string name="label_prodi">Program Studi</string>
+    <string name="label_kampus">Kampus</string>
+    <string name="label_alamat">Alamat</string>
+    <string name="label_matkul">Mata Kuliah</string>
+    <string name="label_hobi">Hobi</string>
+    <string name="label_no_hp">No. HP</string>
+    <string name="label_email">Email</string>
+
+    <string name="value_nama">RIZKI RHOMA DHANI PRAJUNA</string>
+    <string name="value_nim">6304240026</string>
+    <string name="value_ttl">10 Oktober 2005</string>
+    <string name="value_jurusan">Teknik Informatika</string>
+    <string name="value_prodi">Rekayasa Perangkat Lunak</string>
+    <string name="value_kampus">Politeknik Negeri Bengkalis</string>
+    <string name="value_alamat">Jalan Haji Abdul Razak</string>
+    <string name="value_matkul">Pemrograman Mobile II</string>
+    <string name="value_hobi">Memancing Ikan</string>
+    <string name="value_no_hp">082185221091</string>
+    <string name="value_email">rizkirhoma87@gmail.com</string>
+
+    <!-- General & Error -->
+    <string name="error_loading_data">Gagal memuat data produk. Periksa koneksi internet Anda.</string>
+    <string name="retry">Coba Lagi</string>
+    <string name="title_detail">Detail Produk</string>
+
+    <!-- Halaman Detail Produk UTS -->
+    <string name="label_product_id">ID Produk</string>
+    <string name="label_title">Judul</string>
+    <string name="label_category">Kategori</string>
+    <string name="label_price">Harga</string>
+    <string name="label_discount">Diskon</string>
+    <string name="label_rating">Rating</string>
+    <string name="label_stock">Stok</string>
+    <string name="label_availability">Status Ketersediaan</string>
+    <string name="label_tags">Tags</string>
+    <string name="label_brand">Brand</string>
+    <string name="label_sku">SKU</string>
+    <string name="label_weight">Berat</string>
+    <string name="label_dimensions">Dimensi (P × L × T)</string>
+    <string name="label_warranty">Garansi</string>
+    <string name="label_shipping">Pengiriman</string>
+    <string name="label_return_policy">Kebijakan Pengembalian</string>
+    <string name="label_min_order">Minimal Pembelian</string>
+    <string name="label_description">Deskripsi</string>
+    <string name="label_reviews">Ulasan Pelanggan</string>
+    <string name="no_reviews">Belum ada ulasan untuk produk ini.</string>
+</resources>

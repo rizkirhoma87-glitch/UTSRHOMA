@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with Clean & Modern Navy Blue -->
+    <style name="Base.Theme.Uts" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color: Navy Blue -->
+        <item name="colorPrimary">@color/navy_primary</item>
+        <item name="colorPrimaryVariant">@color/navy_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/navy_primary</item>
+        <item name="colorSecondaryVariant">@color/navy_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color: Navy Dark with crisp contrasting light icons -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/navy_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="Theme.Uts" parent="Base.Theme.Uts" />
+
+    <style name="Theme.Uts.NoActionBar" parent="Base.Theme.Uts" />
+</resources>

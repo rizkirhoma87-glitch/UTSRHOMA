@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_gray"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="36dp">
+
+        <!-- Foto Profil dengan Bingkai Rounded Elegan -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="65dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/navy_primary"
+            app:strokeWidth="3dp">
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/profile_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rhoma" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Kartu Biodata Lengkap -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#15000000"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Biodata Mahasiswa"
+                    android:textColor="@color/navy_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <!-- Nama Lengkap -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_nama"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_nama"
+                            android:text="@string/value_nama"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <!-- NIM -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_nim"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_nim"
+                            android:text="@string/value_nim"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <!-- Tempat, Tanggal Lahir -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_ttl"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_ttl"
+                            android:text="@string/value_ttl"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                    <!-- Jurusan -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_jurusan"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_jurusan"
+                            android:text="@string/value_jurusan"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                    <!-- Program Studi -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_prodi"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_prodi"
+                            android:text="@string/value_prodi"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                    <!-- Kampus -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_kampus"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_kampus"
+                            android:text="@string/value_kampus"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                    <!-- Alamat -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_alamat"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_alamat"
+                            android:text="@string/value_alamat"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                    <!-- Mata Kuliah -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_matkul"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_matkul"
+                            android:text="@string/value_matkul"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                    <!-- Hobi -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_hobi"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_hobi"
+                            android:text="@string/value_hobi"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                    </TableRow>
+
+                    <!-- No. HP / WhatsApp -->
+                    <TableRow android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_no_hp"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_no_hp"
+                            android:text="@string/value_no_hp"
+                            android:textColor="@color/price_color"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <!-- Email -->
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="130dp"
+                            android:text="@string/label_email"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:text="@string/value_email"
+                            android:textColor="@color/category_text"
+                            android:textSize="13sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
